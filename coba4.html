@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <title>Mid Project WebProgramming</title>
+    <script type="text/javascript" src="jquery.js"></script>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark  sticky-top"  style="background-color: #9021A4;">
+    <div class="container-fluid position-static">
+      <a class="navbar-brand" href="index.html">Student Management MiniApp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      <div class="container mb-3">
+    
+        <p>
+           <h1 class="text">Student Management</h1>
+            <h1>MiniApp</h1> 
+            <hr>
+        </p>
+
+        <div class="row">
+          <div class="col-7">
+           <div class="container">
+             <h4>Add Student</h4>
+                 <form action="#" method="post">
+     
+                   <p>
+                     <a class="btn btn-primary" style="background-color: #9021A4;"" data-bs-toggle="collapse" href="#collapseAddStudent" role="button" aria-expanded="false" aria-controls="collapseAddStudent">
+                       Show From Add New Student
+                     </a>
+                   </p>
+                   <div class="collapse" id="collapseAddStudent">
+              
+                     <form action="">
+                         <div class="form-group col-6 mb-3">
+                             <label>Student ID (NIM)</label>
+                             <input type="text" name="studentID" class="form-control" placeholder="Student ID" />
+                         </div>
+                
+                         <div class="form-group col-6 mb-3">
+                          <label>Full Name</label>
+                          <input type="text" name="fullName" class="form-control" placeholder="Full Name" />
+                        </div>
+                
+                        <div class="form-group mb-3">
+                          <label>Gender</label>
+                        
+                       <div class="form-check">
+                     
+                       <label class="form-check-label">
+                         <input type="radio" class="form-check-input" name="optradio">Male
+                       </label>
+                     </div>
+                
+                     <div class="form-check">
+                       <label class="form-check-label">
+                         <input type="radio" class="form-check-input" name="optradio">Female
+                       </label>
+                     </div>
+                      </div>
+                
+                
+                            <div class="form-group col-6 mb-3">
+                          <label>Faculty</label>
+                          <select class="form-select" aria-label="Default select faculty">
+                            <option selected>-- SELECT FACULTY --</option>
+                            <option value="1">Pascasarjana</option>
+                            <option value="2">Fakultas Filsafat</option>
+                            <option value="3">Fakultas Keguruan dan Ilmu Pendidikan</option>
+                            <option value="4">Fakultas Ekonomi dan Bisnis</option>
+                            <option value="5">Fakultas Pertanian</option>
+                            <option value="6">Fakultas Ilmu Komputer</option>
+                            <option value="7">Fakultas Keperawatan</option>
+                            <option value="8">Akademi Sekretari Manajemen Indonesia Klabat</option>
+                          </select>
+                        </div> 
+                
+                        <div class="form-group col-6 mb-3">
+                            <label>Faculty</label>
+                            <select class="form-select" aria-label="Default select program study">
+                                <option selected>-- SELECT PROGRAM OF STUDY --</option>
+                                <option value="1">Pascasarjana</option>
+                                <option value="2">Fakultas Filsafat</option>
+                                <option value="3">Fakultas Keguruan dan Ilmu Pendidikan</option>
+                                <option value="4">Fakultas Ekonomi dan Bisnis</option>
+                                <option value="5">Fakultas Pertanian</option>
+                                <option value="6">Fakultas Ilmu Komputer</option>
+                                <option value="7">Fakultas Keperawatan</option>
+                                <option value="8">Akademi Sekretari Manajemen Indonesia Klabat</option>
+                            </select>
+                          </div> 
+                         
+                        <div class="mt-3">
+                          <button type="submit" class="btn btn-primary" style="background-color: #9021A4;">Submit</button>
+                          </div>
+                               
+                            </form>
+                          </div>
+                     </form>
+         </div>
+          </div>
+ 
+          <div class="col-4">
+           <div class="form-filter">
+             <div>
+               <h3>Filter Students By</h3>
+               <p class="mb-3">Faculty</p>
+               <select class="form-select" aria-label="Default select faculty">
+                 <option selected>-- SELECT FACULTY --</option>
+                 <option value="1">Pascasarjana</option>
+                 <option value="2">Fakultas Filsafat</option>
+                 <option value="3">Fakultas Keguruan dan Ilmu Pendidikan</option>
+                 <option value="4">Fakultas Ekonomi dan Bisnis</option>
+                 <option value="5">Fakultas Pertanian</option>
+                 <option value="6">Fakultas Ilmu Komputer</option>
+                 <option value="7">Fakultas Keperawatan</option>
+                 <option value="8">Akademi Sekretari Manajemen Indonesia Klabat</option>
+               </select>
+ 
+               <div class="mt-3">
+                 <button type="submit" class="btn btn-primary" style="background-color: #9021A4;"">Show Students</button>
+                 </div>
+ 
+               <p class="mt-3">Program of Study</p>
+               <select class="form-select" aria-label="Default select program study">
+                 <option selected>-- SELECT PROGRAM OF STUDY --</option>
+                 <option value="1">Pascasarjana</option>
+                 <option value="2">Fakultas Filsafat</option>
+                 <option value="3">Fakultas Keguruan dan Ilmu Pendidikan</option>
+                 <option value="4">Fakultas Ekonomi dan Bisnis</option>
+                 <option value="5">Fakultas Pertanian</option>
+                 <option value="6">Fakultas Ilmu Komputer</option>
+                 <option value="7">Fakultas Keperawatan</option>
+                 <option value="8">Akademi Sekretari Manajemen Indonesia Klabat</option>
+               </select>
+ 
+               <div class="mt-3">
+                 <button type="submit" class="btn btn-primary" style="background-color: #9021A4;">Show Students</button>
+                 </div>
+           </div>
+         </div>
+          </div>
+ 
+       <!-- </div>
+       </div> -->
+ 
+       <!-- <hr>
+       <p class="ourStudent">Our Student</p>
+       <div class="row pt-4 mt-4">
+         <table class="table table-striped">
+             <tr>
+                 <td>Student ID(NIM)</td>
+                 <td>Full Name</td>
+                 <td>Gender</td>
+                 <td>Program of Study</td>
+                 <td>Action</td>
+             </tr> -->
+ 
+             <hr class="mt-3">
+             <p class="fs-1 fw-lighter text-center">Our Student</p>
+             <table id="dataStudent" class="table table-striped" style="width:100%">
+                 <thead>
+                     <tr>
+                         <th>Student ID (NIM)</th>
+                         <th>Full Name</th>
+                         <th>Gender</th>
+                         <th>Program of Study</th>
+                         <th>Action</th>
+                     </tr>
+                 </thead>
+             </div>
+        </div>
+    
+        
+       
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
