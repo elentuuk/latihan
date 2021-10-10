@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .show-me{
+            background: #ddd;
+            font-size: 16px;
+            padding: 20px;
+        }
+    </style>
+    <title>Document</title>
+    
+
+</head>
+<body>
+    <div class="show-detail">
+        <button class="btn btn-danger btnClicl">Show From Add Student</button>
+        <div class="show-me">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam natus eaque eius temporibus id. Quia ipsum hic nesciunt illum, voluptatibus quaerat, nostrum impedit quis similique recusandae rem expedita odio velit.
+            <!-- <div class="container "></div> -->
+        </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="jquery.js"></script> -->
+    <script>
+        $(".btnClick").click(function(event){
+            var x = $(this).text();
+            if(x == "Show From Add Student"){
+                $(this).text("Hide From Add Student");
+                $(this).parent(".show-details").find('.show-me').slideDown();
+            }
+            else
+            {
+                $(this).text("Show From Add Student");
+                $(this).parent(".show-details").find('.show-me').slideUp();
+            }
+        });
+    </script>
+</body>
+</html>
